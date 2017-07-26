@@ -1,0 +1,9 @@
+c:\users\admin\documents\visual studio 2017\Projects\DualSliderBar\DualSliderBar\bin\Debug\netcoreapp1.1\DualSliderBar.deps.json
+c:\users\admin\documents\visual studio 2017\Projects\DualSliderBar\DualSliderBar\bin\Debug\netcoreapp1.1\DualSliderBar.runtimeconfig.json
+c:\users\admin\documents\visual studio 2017\Projects\DualSliderBar\DualSliderBar\bin\Debug\netcoreapp1.1\DualSliderBar.runtimeconfig.dev.json
+c:\users\admin\documents\visual studio 2017\Projects\DualSliderBar\DualSliderBar\bin\Debug\netcoreapp1.1\DualSliderBar.dll
+c:\users\admin\documents\visual studio 2017\Projects\DualSliderBar\DualSliderBar\bin\Debug\netcoreapp1.1\DualSliderBar.pdb
+c:\users\admin\documents\visual studio 2017\Projects\DualSliderBar\DualSliderBar\obj\Debug\netcoreapp1.1\DualSliderBar.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2017\Projects\DualSliderBar\DualSliderBar\obj\Debug\netcoreapp1.1\DualSliderBar.AssemblyInfo.cs
+c:\users\admin\documents\visual studio 2017\Projects\DualSliderBar\DualSliderBar\obj\Debug\netcoreapp1.1\DualSliderBar.dll
+c:\users\admin\documents\visual studio 2017\Projects\DualSliderBar\DualSliderBar\obj\Debug\netcoreapp1.1\DualSliderBar.pdb

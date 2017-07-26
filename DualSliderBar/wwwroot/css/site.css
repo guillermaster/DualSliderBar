@@ -1,0 +1,194 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #119CDD;
+}
+
+.body-content a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+footer {
+    background-color: #0B2D39;
+    height: 300px;
+    margin: 0;
+}
+
+h2{
+    color: #fff;
+    font-size: 150%;
+    font-weight: normal;
+    margin: 20px 0 10px 0;
+}
+
+h3 {
+    color: #fff;
+    font-size: 120%;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+h4 {
+    color: #fff;
+    font-size: 107%;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.loan-comparison {
+    margin-top: 20px;
+}
+
+.slider-area-content {
+    margin: 20px 0 10px 0;
+    padding: 20px 10px;
+}
+
+.below-slider-area-content {
+    margin: 0;
+    padding: 10px 30px;
+    color: #5C5C5C;
+    font-size: 110%;
+}
+
+.representative-example {
+    width: 100%;
+}
+
+    .below-slider-area-content th {        
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .below-slider-area-content td {
+        font-size: 100%;
+        font-weight: normal;
+        margin: 0;
+    }
+
+        .below-slider-area-content-type {
+            
+        }
+
+        .below-slider-area-content-value {
+            color: #F7902F;
+        }
+
+
+input[type=range] {
+    height: 46px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+    input[type=range]:focus {
+        outline: none;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 11px;
+        cursor: pointer;
+        animate: 0.2s;
+        box-shadow: 0px 0px 0px #000000;
+        background: #008FD5;
+        border-radius: 4px;
+        border: 0px solid #010101;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        box-shadow: 1px 1px 3px #2C2D2E;
+        border: 0px solid #E2E7EA;
+        height: 39px;
+        width: 39px;
+        border-radius: 39px;
+        background: #FFFFFF;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -14px;
+    }
+
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #008FD5;
+    }
+
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 11px;
+        cursor: pointer;
+        animate: 0.2s;
+        box-shadow: 0px 0px 0px #000000;
+        background: #008FD5;
+        border-radius: 4px;
+        border: 0px solid #010101;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        box-shadow: 1px 1px 3px #2C2D2E;
+        border: 0px solid #E2E7EA;
+        height: 39px;
+        width: 39px;
+        border-radius: 39px;
+        background: #FFFFFF;
+        cursor: pointer;
+    }
+
+    input[type=range]::-ms-track {
+        width: 100%;
+        height: 11px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+
+    input[type=range]::-ms-fill-lower {
+        background: #008FD5;
+        border: 0px solid #010101;
+        border-radius: 8px;
+        box-shadow: 0px 0px 0px #000000;
+    }
+
+    input[type=range]::-ms-fill-upper {
+        background: #008FD5;
+        border: 0px solid #010101;
+        border-radius: 8px;
+        box-shadow: 0px 0px 0px #000000;
+    }
+
+    input[type=range]::-ms-thumb {
+        margin-top: 1px;
+        box-shadow: 1px 1px 3px #2C2D2E;
+        border: 0px solid #E2E7EA;
+        height: 39px;
+        width: 39px;
+        border-radius: 39px;
+        background: #FFFFFF;
+        cursor: pointer;
+    }
+
+    input[type=range]:focus::-ms-fill-lower {
+        background: #008FD5;
+    }
+
+    input[type=range]:focus::-ms-fill-upper {
+        background: #008FD5;
+    }
