@@ -16,13 +16,6 @@
     text-decoration: underline;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
 
 footer {
     background-color: #0B2D39;
@@ -90,7 +83,7 @@ h4 {
             color: #F7902F;
         }
 
-
+/** slider style **/
 input[type=range] {
     height: 46px;
     -webkit-appearance: none;
