@@ -16,6 +16,9 @@
     text-decoration: underline;
 }
 
+.container {
+    max-width: 1024px;
+}
 
 footer {
     background-color: #0B2D39;
@@ -83,6 +86,28 @@ h4 {
             color: #F7902F;
         }
 
+ /** slider area **/
+.slider-area-content h1 {
+    font-size: 150%;
+    font-weight: lighter;
+    margin: 0;
+}
+.slider-area-content h1 strong {
+    color: #009DE0;
+    font-weight: lighter;
+}
+
+/** product costs info **/
+.product-costs-info-block{
+    color: #fff;
+    width: 77%;
+}
+.product-costs-info-block .mo-row p {
+    font-size: 70%;
+}
+.product-costs-info-block p {
+    font-size: 95%;
+}
 /** slider style **/
 input[type=range] {
     height: 46px;
@@ -109,13 +134,14 @@ input[type=range] {
     input[type=range]::-webkit-slider-thumb {
         box-shadow: 1px 1px 3px #2C2D2E;
         border: 0px solid #E2E7EA;
-        height: 39px;
-        width: 39px;
+        height: 55px;
+        width: 55px;
         border-radius: 39px;
         background: #FFFFFF;
         cursor: pointer;
         -webkit-appearance: none;
-        margin-top: -14px;
+        margin-top: -21px;
+        background: url(/images/sliders2.png) no-repeat -68px 0px;
     }
 
     input[type=range]:focus::-webkit-slider-runnable-track {
@@ -185,3 +211,180 @@ input[type=range] {
     input[type=range]:focus::-ms-fill-upper {
         background: #008FD5;
     }
+
+    /** slider button **/
+.sliderminus {
+    width: 32px;
+    height: 32px;
+    float: left;
+    background: url(/images/sliders2.png) no-repeat -174px -11px;
+    text-indent: -9999px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+    .sliderminus:hover {
+        background-position: -256px -11px;
+    }
+
+    .sliderminus:active {
+        background-position: -256px -11px;
+    }
+
+.sliderplus {
+    width: 32px;
+    height: 32px;
+    float: right;
+    background: url(/images/sliders2.png) no-repeat -133px -11px;
+    text-indent: -9999px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+    .sliderplus:hover {
+        background-position: -215px -11px;
+    }
+
+    .sliderplus:active {
+        background-position: 215px -11px;
+    }
+
+/** submit **/
+.form-submit {
+    float: right;
+}
+.promo, .promo-right-arrow, .promo-left-arrow {
+    background-color: #f7902f;
+    transition: background-color 0.5s ease-out;
+}
+
+.promo:hover, .promo-right-arrow:hover, .promo-left-arrow:hover {
+    background-color: #d6771d;
+}
+
+.button {
+    border: none;
+    color: #FFF;
+    padding: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none !Important;
+    background-color: #F7902F;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin: 30px 0 10px 0;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    outline: none;
+    background-repeat: no-repeat;
+    padding-right: 31px;
+    padding-left: 31px;
+    border-radius: 10px;
+}
+
+    .button:hover {
+        color: #FFF;
+    }
+
+.default:hover, .default-right-arrow:hover, .default-left-arrow:hover {
+    background-color: #29aae9;
+}
+
+.button {
+    transition: background-color 0.5s ease-out;
+}
+
+/** loan summary **/
+.slider-loan-summary {
+    margin-top: 30px;
+    float: left;
+    width: 70%;
+}
+.slider-loan-summary th {
+    font-weight: lighter;
+    font-size: 90%;
+}
+.slider-loan-summary td {
+    font-weight: lighter;
+    font-size: 120%;
+}
+.slider-loan-summary .borrowing {
+    width: 20%;
+}
+.slider-loan-summary .symbol {
+    width: 8%;
+}
+.slider-loan-summary .interest {
+    width: 20%;
+}
+.slider-loan-summary .total {
+    width: 44%;
+    font-weight: bold;
+}
+.loan-borrowing {
+    float: left;
+}
+p#slider-loan-summary span {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+#slider-loan-summary span.loan-amount, #slider-loan-summary span.loan-interest, #slider-loan-summary span.loan-fees, #slider-loan-summary span.loan-total, #slider-loan-summary span.repayment-date {
+    font-weight: 400;
+
+}
+
+.form-input.textfield {
+    top: 4px;
+    right: 0px;
+    padding: 9px;
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 7px;
+    border: solid 1px #5c5c5c;
+    background: #fff;
+    text-align: right;
+    float: right;
+}
+
+.field-prefix-currency span {
+    width: 10px;
+    position: relative;
+    left: -60px;
+    top: 0px;
+    font-weight: 100;
+}
+
+input.form-element-type-textfield-currency {
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    width: 60px;
+    text-align: right;
+    font-weight: lighter;
+    position: relative;
+    top: -30px;
+}
+
+.field-prefix-time span {
+    width: 10px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-weight: 100;
+}
+
+input.form-element-type-textfield-time {
+    border: none;
+    outline: none;
+    left: -40px;
+    width: 36px;
+    text-align: left;
+    font-weight: lighter;
+    position: relative;
+    top: -30px;
+}

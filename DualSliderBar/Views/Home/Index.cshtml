@@ -15,17 +15,106 @@
     <div class="col-md-12">
         <div class="panel slider-area-content">
             <div class="panel-body">
+                <!-- amount scroller -->
                 <div class="row">
-                    <div class="col-md-10">
-                        How much cash do you want?
+                    <div class="col-md-7">
+                        <h1>How much <strong>cash</strong> do you want?</h1>
                     </div>
-                    <div class="col-md-2">
-                        <input type="text" />
+                    <div class="col-md-5">
+                        <div class="form-input textfield">
+                            <span class="field-prefix-currency"><span>£</span></span>
+                            <input type="text" maxlength="128" name="loan_amount" id="edit-loan-amount" size="4" value="" class="form-text required clear_input form-element-type-textfield-currency success" aria-required="true" aria-describedby="edit-loan-amount-error" aria-invalid="false">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12">                        
-                        <input id="cashSlider" type="range" min="50" max="400" step="1" value="111" onchange="updateSlider(this.value)" />
+                    <div class="col-xs-12">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 7%">
+                                    <a class="sliderminus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">-</a>
+                                </td>
+                                <td style="width: 86%">
+                                    <input id="cashSlider" type="range" min="50" max="400" step="1" value="111" onchange="calcTotalRepay()" />
+                                </td>
+                                <td style="width: 7%">
+                                    <a class="sliderplus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">+</a>
+                                </td>
+                            </tr>
+                        </table>                        
+                    </div>
+                </div>
+                <!-- time scroller -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1>How <strong>long</strong> do you want it for?</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-input textfield">
+                            <span class="field-prefix-time"><span>days</span></span>
+                            <input type="text" maxlength="128" name="loan_amount" id="edit-loan-amount" size="4" value="" class="form-text required clear_input form-element-type-textfield-time success" aria-required="true" aria-describedby="edit-loan-amount-error" aria-invalid="false">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 7%">
+                                    <a class="sliderminus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">-</a>
+                                </td>
+                                <td style="width: 86%">
+                                    <input id="cashSlider" type="range" min="50" max="400" step="1" value="111" onchange="calcTotalRepay()" />
+                                </td>
+                                <td style="width: 7%">
+                                    <a class="sliderplus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">+</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- total to repay -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <table class="slider-loan-summary">
+                            <tr>
+                                <th>
+                                    Borrowing
+                                </th>
+                                <th>
+                                    &nbsp;
+                                </th>
+                                <th>
+                                    Interest
+                                </th>
+                                <th>
+                                    &nbsp;
+                                </th>
+                                <th>
+                                    Total to repay
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="borrowing">
+                                    £114
+                                </td>
+                                <td class="symbol">
+                                    +
+                                </td>
+                                <td class="interest">
+                                    £26.44
+                                </td>
+                                <td class="symbol">
+                                    =
+                                </td>
+                                <td class="total">
+                                    £140.44
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="submit" name="op" id="edit-submit" value="Apply now" class="form-submit button promo-right-arrow floatRight clear-both form-element-type-submit">
                     </div>
                 </div>
             </div>
@@ -36,7 +125,7 @@
 <div class="row">
     <div class="col-md-12 below-slider-area-content">
         <div class="row">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-5 col-xs-12">
                 <div class="panel">
                     <div class="panel-body">
                         <table class="representative-example">
@@ -52,13 +141,39 @@
                                     <td class="below-slider-area-content-type">Borrow</td>
                                     <td class="below-slider-area-content-value">£200 for 14 days</td>
                                 </tr>
+                                <tr>
+                                    <td class="below-slider-area-content-type">Interest rate</td>
+                                    <td class="below-slider-area-content-value">292% pa(fixed)</td>
+                                </tr>
+                                <tr>
+                                    <td class="below-slider-area-content-type">One repayment of</td>
+                                    <td class="below-slider-area-content-value">£222.40</td>
+                                </tr>
+                                <tr>
+                                    <td class="below-slider-area-content-type">Representative</td>
+                                    <td class="below-slider-area-content-value">1,509% APR</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xs-12">
-                If you don't repay on time there will be extra costs:
+            <div class="col-md-7 col-xs-12">
+                <section class="product-costs-info-block">
+                    <p class="mo-p">If you don't repay on time there will be extra costs:</p>
+                    <div class="row mo-row">
+                        <div class="col-md-5">
+                            <p class="mo-p mo-text-small mo-margin-vertical--0">Missed payment fee</p>
+                            <p class="mo-p">£15.00</p>
+                            <p class="mo-p mo-text-small">Charged at 11pm on the third day after your repayment date</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mo-p mo-text-small mo-margin-vertical--0">Late interest</p>
+                            <p class="mo-p">0.8% per day</p>
+                            <p class="mo-p mo-text-small">Interest will continue to be charged up to a maximum of 30 days from your repayment date</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
