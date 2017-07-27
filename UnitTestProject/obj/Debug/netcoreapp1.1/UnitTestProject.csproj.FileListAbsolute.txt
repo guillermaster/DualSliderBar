@@ -1,0 +1,16 @@
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\UnitTestProject.deps.json
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\UnitTestProject.runtimeconfig.json
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\UnitTestProject.runtimeconfig.dev.json
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\UnitTestProject.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\UnitTestProject.pdb
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\obj\Debug\netcoreapp1.1\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\obj\Debug\netcoreapp1.1\UnitTestProject.AssemblyInfo.cs
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\obj\Debug\netcoreapp1.1\UnitTestProject.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\obj\Debug\netcoreapp1.1\UnitTestProject.pdb
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\ShortTermLoansBusiness.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\ShortTermLoansModels.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\ShortTermLoansBusiness.pdb
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\UnitTestProject\bin\Debug\netcoreapp1.1\ShortTermLoansModels.pdb

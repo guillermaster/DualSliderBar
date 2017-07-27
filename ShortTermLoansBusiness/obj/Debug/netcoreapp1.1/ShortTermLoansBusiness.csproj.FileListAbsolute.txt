@@ -1,0 +1,9 @@
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansBusiness\bin\Debug\netcoreapp1.1\ShortTermLoansBusiness.deps.json
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansBusiness\bin\Debug\netcoreapp1.1\ShortTermLoansBusiness.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansBusiness\bin\Debug\netcoreapp1.1\ShortTermLoansBusiness.pdb
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansBusiness\obj\Debug\netcoreapp1.1\ShortTermLoansBusiness.csprojResolveAssemblyReference.cache
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansBusiness\obj\Debug\netcoreapp1.1\ShortTermLoansBusiness.AssemblyInfo.cs
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansBusiness\obj\Debug\netcoreapp1.1\ShortTermLoansBusiness.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansBusiness\obj\Debug\netcoreapp1.1\ShortTermLoansBusiness.pdb
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansBusiness\bin\Debug\netcoreapp1.1\ShortTermLoansModels.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansBusiness\bin\Debug\netcoreapp1.1\ShortTermLoansModels.pdb

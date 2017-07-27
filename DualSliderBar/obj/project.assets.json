@@ -3678,6 +3678,21 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "ShortTermLoansBusiness/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2",
+          "ShortTermLoansModels": "1.0.0"
+        }
+      },
+      "ShortTermLoansModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        }
       }
     }
   },
@@ -9756,6 +9771,16 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "ShortTermLoansBusiness/1.0.0": {
+      "type": "project",
+      "path": "../ShortTermLoansBusiness/ShortTermLoansBusiness.csproj",
+      "msbuildProject": "../ShortTermLoansBusiness/ShortTermLoansBusiness.csproj"
+    },
+    "ShortTermLoansModels/1.0.0": {
+      "type": "project",
+      "path": "../ShortTermLoansModels/ShortTermLoansModels.csproj",
+      "msbuildProject": "../ShortTermLoansModels/ShortTermLoansModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9766,7 +9791,9 @@
       "Microsoft.AspNetCore.StaticFiles >= 1.1.2",
       "Microsoft.Extensions.Logging.Debug >= 1.1.2",
       "Microsoft.NETCore.App >= 1.1.2",
-      "Microsoft.VisualStudio.Web.BrowserLink >= 1.1.2"
+      "Microsoft.VisualStudio.Web.BrowserLink >= 1.1.2",
+      "ShortTermLoansBusiness >= 1.0.0",
+      "ShortTermLoansModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9785,7 +9812,14 @@
       ],
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Guillermo\\Documents\\Visual Studio 2017\\Projects\\DualSliderBar\\ShortTermLoansModels\\ShortTermLoansModels.csproj": {
+              "projectPath": "C:\\Users\\Guillermo\\Documents\\Visual Studio 2017\\Projects\\DualSliderBar\\ShortTermLoansModels\\ShortTermLoansModels.csproj"
+            },
+            "C:\\Users\\Guillermo\\Documents\\Visual Studio 2017\\Projects\\DualSliderBar\\ShortTermLoansBusiness\\ShortTermLoansBusiness.csproj": {
+              "projectPath": "C:\\Users\\Guillermo\\Documents\\Visual Studio 2017\\Projects\\DualSliderBar\\ShortTermLoansBusiness\\ShortTermLoansBusiness.csproj"
+            }
+          }
         }
       }
     },

@@ -16,3 +16,7 @@ C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\DualSlide
 C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\DualSliderBar\obj\Debug\netcoreapp1.1\DualSliderBar.AssemblyInfo.cs
 C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\DualSliderBar\obj\Debug\netcoreapp1.1\DualSliderBar.dll
 C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\DualSliderBar\obj\Debug\netcoreapp1.1\DualSliderBar.pdb
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\DualSliderBar\bin\Debug\netcoreapp1.1\ShortTermLoansBusiness.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\DualSliderBar\bin\Debug\netcoreapp1.1\ShortTermLoansModels.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\DualSliderBar\bin\Debug\netcoreapp1.1\ShortTermLoansBusiness.pdb
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\DualSliderBar\bin\Debug\netcoreapp1.1\ShortTermLoansModels.pdb

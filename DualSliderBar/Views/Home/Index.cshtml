@@ -1,4 +1,7 @@
-﻿<div class="row">
+﻿@using ShortTermLoansModels;
+@model ShortTermLoanModel
+
+<div class="row">
     <div class="col-md-10">
         <h2>Wonga Short Term Loans - bridge the gap until payday</h2>
         <h3>We can send Short Term Loans from £50 - £400 within 5 minutes of approval.</h3>
@@ -23,7 +26,7 @@
                     <div class="col-md-5">
                         <div class="form-input textfield">
                             <span class="field-prefix-currency"><span>£</span></span>
-                            <input type="text" maxlength="128" name="loan_amount" id="edit-loan-amount" size="4" value="" class="form-text required clear_input form-element-type-textfield-currency success" aria-required="true" aria-describedby="edit-loan-amount-error" aria-invalid="false">
+                            <input type="text" maxlength="128" name="loan_amount" id="edit-loan-amount" size="4" value="@Model.SelectedCash" class="form-text required clear_input form-element-type-textfield-currency success" aria-required="true" aria-describedby="edit-loan-amount-error" aria-invalid="false">
                         </div>
                     </div>
                 </div>
@@ -32,13 +35,13 @@
                         <table style="width: 100%">
                             <tr>
                                 <td style="width: 7%">
-                                    <a class="sliderminus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">-</a>
+                                    <a class="sliderminus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;" onclick="restCash()">-</a>
                                 </td>
                                 <td style="width: 86%">
-                                    <input id="cashSlider" type="range" min="50" max="400" step="1" value="111" onchange="calcTotalRepay()" />
+                                    <input id="cashSlider" type="range" min="@Model.MinCash" max="@Model.MaxCash" step="1" value="@Model.SelectedCash" onchange="calcTotalRepay()" oninput="updateSelectedDays()" />
                                 </td>
                                 <td style="width: 7%">
-                                    <a class="sliderplus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">+</a>
+                                    <a class="sliderplus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;" onclick="addCash()">+</a>
                                 </td>
                             </tr>
                         </table>                        
@@ -52,7 +55,7 @@
                     <div class="col-md-5">
                         <div class="form-input textfield">
                             <span class="field-prefix-time"><span>days</span></span>
-                            <input type="text" maxlength="128" name="loan_amount" id="edit-loan-amount" size="4" value="" class="form-text required clear_input form-element-type-textfield-time success" aria-required="true" aria-describedby="edit-loan-amount-error" aria-invalid="false">
+                            <input type="text" maxlength="128" name="loan_time" id="edit-loan-time" size="4" value="@Model.SelectedDays" class="form-text required clear_input form-element-type-textfield-time success" aria-required="true" aria-describedby="edit-loan-amount-error" aria-invalid="false">
                         </div>
                     </div>
                 </div>
@@ -61,10 +64,10 @@
                         <table style="width: 100%">
                             <tr>
                                 <td style="width: 7%">
-                                    <a class="sliderminus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">-</a>
+                                    <a class="sliderminus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;" onclick="restCash()">-</a>
                                 </td>
                                 <td style="width: 86%">
-                                    <input id="cashSlider" type="range" min="50" max="400" step="1" value="111" onchange="calcTotalRepay()" />
+                                    <input id="daysSlider" type="range" min="@Model.MinDays" max="@Model.MaxDays" step="1" value="@Model.SelectedDays" onchange="calcTotalRepay()" oninput="updateSelectedDays()" />
                                 </td>
                                 <td style="width: 7%">
                                     <a class="sliderplus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">+</a>
@@ -96,19 +99,19 @@
                             </tr>
                             <tr>
                                 <td class="borrowing">
-                                    £114
+                                    £<span id="resBorrowing">@Model.ResultBorrowing</span>
                                 </td>
                                 <td class="symbol">
                                     +
                                 </td>
                                 <td class="interest">
-                                    £26.44
+                                    £<span id="resInterest">@Model.ResultInterest</span>
                                 </td>
                                 <td class="symbol">
                                     =
                                 </td>
                                 <td class="total">
-                                    £140.44
+                                    £<span id="resTotal">@Model.ResultTotalRepay</span>
                                 </td>
                             </tr>
                         </table>
@@ -179,4 +182,44 @@
     </div>
 </div>
 
+<script>
+    function addCash() {
+        var cash = parseInt($("#cashSlider").val());
+        cash++;
+        $("#cashSlider").val(cash);
+        $("#edit-loan-amount").val(cash);
+        calcTotalRepay();
+    }
 
+    function restCash() {
+        var cash = parseInt($("#cashSlider").val());
+        cash--;
+        $("#cashSlider").val(cash);
+        $("#edit-loan-amount").val(cash);
+        calcTotalRepay();
+    }
+
+    function updateSelectedDays() {
+        var cash = $("#cashSlider").val();
+        var days = $("#daysSlider").val();
+        $("#edit-loan-amount").val(cash);
+        $("#edit-loan-time").val(days);
+    }
+
+    function calcTotalRepay() {
+        var cash = $("#cashSlider").val();
+        var days = $("#daysSlider").val();
+        
+        $.ajax({
+            dataType: "json",
+            type: "GET",
+            url: '@Url.Action("CalculateResult", "Home")',
+            data: { cash: cash, days: days },
+            success: function (response) {
+                $("#resBorrowing").text(response.resultBorrowing);
+                $("#resInterest").text(response.resultInterest);
+                $("#resTotal").text(response.resultTotalRepay);
+            }
+        });
+    }
+</script>
