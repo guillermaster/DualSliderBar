@@ -25,6 +25,8 @@ namespace ShortTermLoansModels
 
         public DateTime EndDate { get; set; }
 
+        public string DueDate { get; set; }
+
         public decimal Interest { get; set; }
 
         public int ResultBorrowing { get; set; }

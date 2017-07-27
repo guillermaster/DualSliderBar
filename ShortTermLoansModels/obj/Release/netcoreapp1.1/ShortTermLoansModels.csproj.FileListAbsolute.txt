@@ -1,0 +1,6 @@
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansModels\bin\Release\netcoreapp1.1\ShortTermLoansModels.deps.json
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansModels\bin\Release\netcoreapp1.1\ShortTermLoansModels.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansModels\bin\Release\netcoreapp1.1\ShortTermLoansModels.pdb
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansModels\obj\Release\netcoreapp1.1\ShortTermLoansModels.AssemblyInfo.cs
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansModels\obj\Release\netcoreapp1.1\ShortTermLoansModels.dll
+C:\Users\Guillermo\Documents\Visual Studio 2017\Projects\DualSliderBar\ShortTermLoansModels\obj\Release\netcoreapp1.1\ShortTermLoansModels.pdb

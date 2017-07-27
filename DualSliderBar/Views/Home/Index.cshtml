@@ -52,7 +52,10 @@
                     <div class="col-md-7">
                         <h1>How <strong>long</strong> do you want it for?</h1>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-3">
+                        (<span id="due-date">@Model.DueDate</span>)
+                    </div>
+                    <div class="col-md-2">
                         <div class="form-input textfield">
                             <span class="field-prefix-time"><span>days</span></span>
                             <input type="text" maxlength="128" name="loan_time" id="edit-loan-time" size="4" value="@Model.SelectedDays" class="form-text required clear_input form-element-type-textfield-time success" aria-required="true" aria-describedby="edit-loan-amount-error" aria-invalid="false">
@@ -235,7 +238,9 @@
                 $("#resBorrowing").text(response.resultBorrowing);
                 $("#resInterest").text(response.resultInterest);
                 $("#resTotal").text(response.resultTotalRepay);
+                $("#due-date").text(response.dueDate);
             }
         });
     }
+    
 </script>
