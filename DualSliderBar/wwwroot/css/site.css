@@ -3,6 +3,66 @@
     padding-bottom: 0;
 }
 
+.navbar-brand {
+    background: url(/images/sliders2.png) no-repeat -160px -50px;
+    width: 120px;
+    height: 40px;
+}
+
+.footer{
+    padding: 20px;
+}
+
+.footer a{
+    color: #fff;
+}
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline; 
+}
+
+.footer ul {
+    list-style: none;
+}
+.footer-legend {
+    color: #96A7AD;
+    font-size: 85%;
+    margin: 20px 0 0 10px;
+    border-left: thin solid #fff;
+    padding-left: 15px;
+}
+    
+.corporate-footer-nav-title {
+    color: #058FCB;
+    font-size: 115%;
+    margin: 10px 0;
+}
+.corporate-footer-region-links ul {
+    list-style-type: none;
+}
+.corporate-footer-region-links li {
+    float: left
+}
+.en-UK {
+    background: url(/images/sliders2.png) no-repeat 1px -192px;
+    width: 35px;
+    height: 25px;
+}
+.en-PL {
+    background: url(/images/sliders2.png) no-repeat -57px -192px;
+    width: 35px;
+    height: 25px;
+}
+.en-ZA {
+    background: url(/images/sliders2.png) no-repeat -114px -192px;
+    width: 35px;
+    height: 25px;
+}
+.en-ES{
+    background: url(/images/sliders2.png) no-repeat -172px -192px;
+    width: 35px;
+    height: 25px;
+}
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
@@ -123,7 +183,7 @@ input[type=range] {
     input[type=range]::-webkit-slider-runnable-track {
         width: 100%;
         height: 11px;
-        cursor: pointer;
+        cursor: default;
         animate: 0.2s;
         box-shadow: 0px 0px 0px #000000;
         background: #008FD5;
@@ -138,7 +198,7 @@ input[type=range] {
         width: 55px;
         border-radius: 39px;
         background: #FFFFFF;
-        cursor: pointer;
+        cursor: default;
         -webkit-appearance: none;
         margin-top: -21px;
         background: url(/images/sliders2.png) no-repeat -68px 0px;
@@ -151,7 +211,7 @@ input[type=range] {
     input[type=range]::-moz-range-track {
         width: 100%;
         height: 11px;
-        cursor: pointer;
+        cursor: default;
         animate: 0.2s;
         box-shadow: 0px 0px 0px #000000;
         background: #008FD5;
@@ -166,13 +226,13 @@ input[type=range] {
         width: 39px;
         border-radius: 39px;
         background: #FFFFFF;
-        cursor: pointer;
+        cursor: default;
     }
 
     input[type=range]::-ms-track {
         width: 100%;
         height: 11px;
-        cursor: pointer;
+        cursor: default;
         animate: 0.2s;
         background: transparent;
         border-color: transparent;
@@ -201,7 +261,7 @@ input[type=range] {
         width: 39px;
         border-radius: 39px;
         background: #FFFFFF;
-        cursor: pointer;
+        cursor: default;
     }
 
     input[type=range]:focus::-ms-fill-lower {
@@ -263,6 +323,7 @@ input[type=range] {
 .promo:hover, .promo-right-arrow:hover, .promo-left-arrow:hover {
     background-color: #d6771d;
 }
+
 
 .button {
     border: none;

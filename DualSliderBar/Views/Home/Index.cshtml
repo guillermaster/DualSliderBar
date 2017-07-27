@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-md-10">
         <h2>Wonga Short Term Loans - bridge the gap until payday</h2>
-        <h3>We can send Short Term Loans from £50 - £400 within 5 minutes of approval.</h3>
+        <h3>We can send Short Term Loans from £@Model.MinCash - £@Model.MaxCash within 5 minutes of approval.</h3>
     </div>
     <div class="col-md-2 loan-comparison">
         <h4>
@@ -64,13 +64,13 @@
                         <table style="width: 100%">
                             <tr>
                                 <td style="width: 7%">
-                                    <a class="sliderminus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;" onclick="restCash()">-</a>
+                                    <a class="sliderminus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;" onclick="restDay()">-</a>
                                 </td>
                                 <td style="width: 86%">
                                     <input id="daysSlider" type="range" min="@Model.MinDays" max="@Model.MaxDays" step="1" value="@Model.SelectedDays" onchange="calcTotalRepay()" oninput="updateSelectedDays()" />
                                 </td>
                                 <td style="width: 7%">
-                                    <a class="sliderplus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;">+</a>
+                                    <a class="sliderplus" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;" onclick="addDay()">+</a>
                                 </td>
                             </tr>
                         </table>
@@ -196,6 +196,22 @@
         cash--;
         $("#cashSlider").val(cash);
         $("#edit-loan-amount").val(cash);
+        calcTotalRepay();
+    }
+
+    function addDay() {
+        var days = parseInt($("#daysSlider").val());
+        days++;
+        $("#daysSlider").val(days);
+        $("#edit-loan-time").val(days);
+        calcTotalRepay();
+    }
+
+    function restDay() {
+        var days = parseInt($("#daysSlider").val());
+        days--;
+        $("#daysSlider").val(days);
+        $("#edit-loan-time").val(days);
         calcTotalRepay();
     }
 

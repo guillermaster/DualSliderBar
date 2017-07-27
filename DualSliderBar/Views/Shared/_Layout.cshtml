@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - DualSliderBar</title>
+    <title>@ViewData["Title"]</title>
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -28,11 +28,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">DualSliderBar</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+
+                </a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <ul class="nav navbar-nav active">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Our loans<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">6 month flexi loan</a></li>
+                            <li><a href="#">Short Term loan</a></li>
+                            <li><a href="#">3 month Flexi loan</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">How it works</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Cash Smart</a></li>
@@ -49,7 +58,66 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="text-muted">Place sticky footer content here.</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <ul>
+                                <li class="corporate-footer-nav-title">Customer</li>
+                                <li><a href="/help">Help</a></li>
+                                <li><a href="/cashsmart" target="_blank">Cash Smart</a></li>
+                                <li><a href="/debt-advice">Debt advice</a></li>
+                                <li><a href="/complaints">Complaints</a></li>
+                                <li><a href="/loan-calculator">Loan Calculator</a></li>
+                                <li><a href="/compare-payday-loans">Compare Loans</a></li>
+                                <li><a href="/sitemap">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li class="corporate-footer-nav-title">Corporate</li>
+                                <li><a href="http://about.wonga.com/" target="_blank">About us</a></li>
+                                <li><a href="/media-contacts">Press office</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li class="corporate-footer-nav-title">Legal</li>
+                                <li><a href="/privacy-policy">Privacy</a></li>
+                                <li><a href="/legal">Legal information</a></li>
+                                <li><a href="/modern-slavery-act">Modern Slavery Act</a></li>
+                                <li><a href="/cookie-policy">Cookies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li class="corporate-footer-nav-title">Our Products</li>
+                                <li><a href="/flexiloan-6">6 month Flexi Loan</a></li>
+                                <li><a href="/short-term-loan">Short Term Loan</a></li>
+                                <li><a href="/flexiloan-3">3 month Flexi Loan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-legend">
+                        <p>
+                            WDFC UK Limited is registered in England and Wales with registered
+                            number 6374235 and registered office at 88 Crawford Street, London,
+                            W1H 2EJ. Authorised and regulated by the Financial Conduct Authority
+                            under registration number 671454
+                        </p>
+                        <p>Loans are only available to over 18s and are subject to status</p>
+                        <ul class="corporate-footer-region-links">
+                            <li><a href="https://www.wonga.com" title="United Kingdom"><div class="en-UK"></div></a></li>
+                            <li><a href="https://www.wonga.pl" title="Poland"><div class="en-PL"></div></a></li>
+                            <li><a href="https://www.wonga.co.za" title="South Africa"><div class="en-ZA"></div></a></li>
+                            <li><a href="https://www.wonga.es" title="Spain"><div class="en-ES"></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/.corporate-footer-smallprint-->
+            </div>
         </div>
     </footer>
 
